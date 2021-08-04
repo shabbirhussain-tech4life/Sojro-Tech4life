@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.desai.vatsal.mydynamiccalendar.MyDynamicCalendar
+        android:id="@+id/myCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:minDate="05/22/2016"
+        />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:elevation="16dp"
+        android:layout_margin="10dp"
+        app:backgroundTint="@android:color/holo_red_dark"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/ic_add_simple"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/dietbtn"/>
+
+</RelativeLayout>

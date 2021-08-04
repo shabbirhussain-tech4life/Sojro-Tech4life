@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".jitsi.WelcomeActivity">
+    <FrameLayout
+
+        android:name="com.jitsi.SplitFragment"
+        android:id="@+id/fragment_container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+<!--    <LinearLayout-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <GridLayout-->
+
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:alignmentMode="alignMargins"-->
+<!--            android:columnCount="1"-->
+
+<!--            android:rowCount="3">-->
+<!--            &lt;!&ndash;caseview&ndash;&gt;-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:background="@color/dark_green"-->
+<!--                app:cardCornerRadius="12dp"-->
+<!--                app:cardElevation="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/cases"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@color/orange"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:weightSum="1">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/case_rec"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="0.8"-->
+<!--                        android:text="Case No: "-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="20dp" />-->
+
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:visibility="gone"-->
+<!--                android:id="@+id/card_view1"-->
+
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_margin="10dp"-->
+<!--                app:cardCornerRadius="12dp"-->
+<!--                app:cardElevation="10dp">-->
+
+<!--                <FrameLayout-->
+<!--                    android:id="@+id/one"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="300dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                   ></FrameLayout>-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            &lt;!&ndash;  camera&ndash;&gt;-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:background="@color/light_green"-->
+<!--                app:cardCornerRadius="12dp"-->
+<!--                app:cardElevation="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/cameraNo"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@color/yellow"-->
+
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:weightSum="1">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+
+<!--                        android:layout_weight="0.8"-->
+<!--                        android:text="Camera "-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="20dp" />-->
+
+
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+
+
+
+<!--            &lt;!&ndash;Framelayout &ndash;&gt;-->
+<!--            &lt;!&ndash;  <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--            &lt;!&ndash;      android:visibility="gone"&ndash;&gt;-->
+<!--            &lt;!&ndash;      android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;      android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;      android:layout_columnWeight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;      android:layout_rowWeight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;      app:cardElevation="10dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;      android:layout_margin="10dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;      android:id="@+id/framVisi"&ndash;&gt;-->
+<!--            &lt;!&ndash;      app:cardCornerRadius="12dp">&ndash;&gt;-->
+<!--            &lt;!&ndash;    <FrameLayout&ndash;&gt;-->
+<!--            &lt;!&ndash;        android:visibility="gone"&ndash;&gt;-->
+<!--            &lt;!&ndash;        android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;        android:id="@+id/two">&ndash;&gt;-->
+<!--            &lt;!&ndash;    </FrameLayout>&ndash;&gt;-->
+<!--            &lt;!&ndash;  </androidx.cardview.widget.CardView>&ndash;&gt;-->
+<!--            &lt;!&ndash;  eLab&ndash;&gt;-->
+<!--        </GridLayout>-->
+<!--        <FrameLayout-->
+<!--            android:id="@+id/two"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            ></FrameLayout>-->
+<!--    </LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:orientation="vertical"-->
+<!--    android:id="@+id/container"-->
+
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--</FrameLayout>-->

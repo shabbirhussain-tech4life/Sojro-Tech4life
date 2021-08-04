@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_maincourse"
+        android:icon="@drawable/soup"
+        android:title="@string/title_maincourse" />
+
+    <item
+        android:id="@+id/navigation_starters"
+        android:icon="@drawable/salad"
+        android:title="@string/title_starters" />
+
+    <item
+        android:id="@+id/navigation_drinks"
+        android:icon="@drawable/waterglass"
+        android:title="@string/title_drinks" />
+
+    <item
+        android:id="@+id/navigation_others"
+        android:icon="@drawable/diet"
+        android:title="@string/title_others"
+        />
+
+</menu>

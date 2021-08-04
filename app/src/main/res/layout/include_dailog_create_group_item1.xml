@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp">
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_people"
+            android:id="@+id/imageView3"
+            android:layout_gravity="center"/>
+
+    <TextView
+            android:text="Create group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView48"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="15dp"
+            />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txt_group_name"
+            android:hint="Group name"/>
+
+    <com.mdcbeta.widget.SpecialityView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/skillview"/>
+
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+        <CheckedTextView
+            android:textSize="15dp"
+                android:text="Private"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+          android:background="@drawable/rounded_green_bg"
+                android:id="@+id/check_private"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+
+
+        <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+
+        <CheckedTextView
+            android:textSize="15dp"
+                android:text="Public"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+          android:background="@drawable/rounded_green_bg"
+                android:id="@+id/check_public"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+
+                android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:textSize="15dp"
+            android:text="Next"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/next_btn"
+            android:padding="10dp"
+            android:gravity="center"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_green_bg"/>
+
+
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+</LinearLayout>

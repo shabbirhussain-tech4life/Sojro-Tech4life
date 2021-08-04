@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/tobacco"
+        android:id="@+id/first_aid"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/first"
+        android:id="@+id/women_health"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="1.0"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/abc"
+        android:id="@+id/sexual"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/hbp_icon"
+        android:id="@+id/high_blood"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/heart"
+        android:id="@+id/health"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintRight_toLeftOf="@+id/guideline2"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.0"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/diabetes"
+        android:id="@+id/diabities"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        android:layout_marginRight="8dp"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/child_support"
+        android:id="@+id/bal_diet"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline2"
+        android:layout_marginRight="8dp"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/sexual_health"
+        android:id="@+id/child_support"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/run"
+        android:id="@+id/mental"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintRight_toLeftOf="@+id/women_health"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.0"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="127dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline3"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="254dp"/>
+
+    <TextView
+        android:text="Healthy heart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/health"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline2"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:text="Diabetes(sugar)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView17"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/diabities"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:text="Highblood pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView19"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="6dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="12dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/high_blood"/>
+
+    <TextView
+        android:text="Child health"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView20"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/bal_diet"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:textSize="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline2"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:text="Sexual health"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView21"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/child_support"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2"/>
+
+    <TextView
+        android:text="Mental health"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView22"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/sexual"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:text="Women's health"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView30"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/mental"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline2"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:text="First aid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView31"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/women_health"
+        app:layout_constraintLeft_toRightOf="@+id/textView30"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        android:layout_marginRight="8dp" />
+
+    <TextView
+        android:text="Tobacco use"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView34"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/first_aid"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

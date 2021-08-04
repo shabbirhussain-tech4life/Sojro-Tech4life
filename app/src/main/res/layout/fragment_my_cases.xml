@@ -1,0 +1,38 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true">
+
+
+    <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:iconifiedByDefault="false"
+            app:defaultQueryHint="Search Here..."
+            android:elevation="10dp"
+            android:id="@+id/search_view"
+            android:focusableInTouchMode="true"
+            android:background="@color/snow_white"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/main_list"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"/>
+
+</LinearLayout>
+
+
+
+
+
+
+
+

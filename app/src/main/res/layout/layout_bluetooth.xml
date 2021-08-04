@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/dark_greenish"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ListView
+        android:id="@+id/bdevice"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/llbttitle">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="3dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/light_greenish"
+            android:text="@string/bluetooth_title"/>
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1.5dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/black"/>-->
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/llbttitle"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/btnBtCtr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:background="@color/gray_btn_bg_color"
+        android:padding="5dp"
+        android:text="@string/search_devices"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+      android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/tvbtinfo"
+        android:textSize="12sp"
+        android:layout_below="@id/btnBtCtr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/black"
+        android:text=""
+        />
+</LinearLayout>
+
+</RelativeLayout>

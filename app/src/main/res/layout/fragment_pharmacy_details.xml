@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+
+  android:layout_height="wrap_content">
+
+  <ScrollView
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/very_light_grey">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/snow_white">
+
+        <ImageView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:src="@drawable/sojro_logo"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Case id:"
+          android:textSize="14sp"
+          android:textStyle="bold"
+          android:layout_marginTop="15dp"
+          android:padding="5dp"
+          android:layout_alignParentRight="true"
+          android:id="@+id/txt_case_code" />
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Created:"
+          android:textSize="14sp"
+          android:textStyle="bold"
+          android:layout_marginTop="3dp"
+          android:padding="5dp"
+          android:layout_alignParentRight="true"
+          android:layout_below="@+id/txt_case_code"
+          android:id="@+id/txt_datetime" />
+
+      </RelativeLayout>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:id="@+id/txt_name"
+        android:background="@color/snow_white"/>
+
+      <TextView
+        android:text="Prescription"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:background="@color/snow_white"
+        android:padding="10dp" />
+      <TextView
+
+        android:id="@+id/txt_textarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:background="@color/snow_white"
+        android:padding="10dp" />
+
+      <TextView
+        android:id="@+id/txt_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:background="@color/snow_white"
+        android:padding="10dp" />
+
+      <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Signature"
+          android:padding="5dp"
+          android:textSize="14sp"
+          android:id="@+id/textview"
+          android:layout_alignParentRight="true"
+          android:textStyle="bold"/>
+
+        <TextView
+          android:id="@+id/txt_sign"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_below="@+id/textview"
+          android:padding="10dp"/>
+
+      </RelativeLayout>
+
+    </LinearLayout>
+
+  </ScrollView>
+</RelativeLayout>

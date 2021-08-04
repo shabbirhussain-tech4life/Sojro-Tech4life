@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dailog_inset">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:scaleType="center"
+        android:background="@drawable/toogle_off"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="Add Blood Pressure Record"
+        android:layout_gravity="center_vertical"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif"
+        android:contentDescription="@string/app_name" />
+
+    <Button
+        android:id="@+id/bpdate"
+        android:text="Date"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#ffb60002"
+        android:paddingBottom="3dp"
+        android:drawableLeft="@drawable/calendar"
+        android:paddingTop="3dp">
+    </Button>
+
+
+    <Button
+        android:id="@+id/bptime"
+        android:layout_width="match_parent"
+        android:text="Time"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#ffb60002"
+        android:drawableLeft="@drawable/clock"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+    </Button>
+
+
+
+    <EditText
+        android:id="@+id/BPsystolict"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:inputType="number"
+        android:hint="Systolic (mm Hg)"
+        android:paddingLeft="10dp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/BPdiastolic"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:hint="Diastolic (mm Hg)"
+        android:paddingLeft="10dp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/BPresult"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Result"
+        android:paddingLeft="10dp" >
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/txtbpcomments"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Comment"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bpcancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:text="Cancel"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@+id/bpok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:text="Ok"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</RelativeLayout>

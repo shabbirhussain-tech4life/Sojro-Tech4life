@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:background="@color/dark_greenish"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/llspo2title">
+
+        <TextView
+            android:background="@color/light_greenish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="3dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+android:visibility="gone"
+
+            android:text="SPO2"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layout1"
+        android:background="@color/white"
+        android:layout_weight="1">
+
+    <TextView
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:id="@+id/tvSPO2info"
+        android:layout_below="@id/btnBtCtr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oxygen saturation:"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/txt_sat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_resp_rate"
+        android:hint="Cannot be over than 100%"
+        android:inputType="number"
+        android:textSize="14dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
+       />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <RadioGroup
+        android:id="@+id/radio_group3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_sat"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_oxygen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/orange"
+            android:text="On oxygen"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+          android:checked="true"
+            android:id="@+id/radio_roomair"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/orange"
+            android:textColor="@color/black"
+            android:text="On room air" />
+
+    </RadioGroup>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+        <com.mdcbeta.view.WaveformView
+            android:id="@+id/wfSpO2"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+
+
+            app:maxValue="180" />
+
+
+        <!--/>-->
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

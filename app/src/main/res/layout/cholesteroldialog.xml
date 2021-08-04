@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/toogle_off"
+        android:contentDescription="@string/app_name"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:scaleType="center"
+        android:text="Add Cholesterol Record"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/cho_date"
+        android:text="Date"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="#ffb60002"
+        android:drawableLeft="@drawable/calendar"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+    </Button>
+
+
+    <Button
+        android:id="@+id/cho_time"
+        android:layout_width="match_parent"
+        android:text="Time"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#ffb60002"
+        android:drawableLeft="@drawable/clock"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <Spinner
+            android:id="@+id/time_cholesterol"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:entries="@array/TypeofTaste"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <Spinner
+            android:id="@+id/unit_cholesterol"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:entries="@array/Unit"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/choles_result"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:inputType="number"
+        android:hint="Result">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/choles_comments"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Comment">
+
+    </EditText>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cho_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:text="Cancel"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@+id/cho_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:text="Ok"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+</LinearLayout>

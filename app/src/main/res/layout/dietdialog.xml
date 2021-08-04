@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dailog_inset">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:scaleType="center"
+        android:background="@drawable/toogle_off"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="EXERCISE"
+        android:layout_gravity="center_vertical"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif"
+        android:contentDescription="@string/app_name" />
+
+
+    <Button
+        android:id="@+id/exdate"
+        android:text="CHOOSE_DATE"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#ffb60002"
+        android:drawableLeft="@drawable/calendar"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+    </Button>
+
+
+    <Button
+        android:id="@+id/extime"
+        android:layout_width="match_parent"
+        android:text="CHOOSE_TIME"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#ffb60002"
+        android:drawableLeft="@drawable/clock"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+    </Button>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <EditText
+            android:textSize="20dp"
+            android:id="@+id/durationsss"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:inputType="number|text"
+            android:hint="Duration">
+        </EditText>
+
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/typeofactivity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    </Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <Button
+            android:background="@color/orange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:id="@+id/ex_cancel"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="right"
+            />
+
+        <Button
+            android:background="@color/orange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ok"
+            android:id="@+id/ex_ok"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="right"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

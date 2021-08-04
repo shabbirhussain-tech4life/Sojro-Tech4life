@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dailog_inset">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end"
+            android:id="@+id/cancel_btn"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/cross_icon"
+            android:backgroundTint="@color/dark_grey"
+            android:foreground="?selectableItemBackground"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColorHint="@color/light_grey"
+            android:theme="@style/EdittextTheme"
+            android:paddingLeft="10dp"
+            android:gravity="left"
+            android:inputType="textCapSentences"
+            android:visibility="gone"
+            android:id="@+id/name"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            />
+
+
+
+        <TextView
+            android:textSize="15dp"
+            android:text="Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spin_realtion"
+            android:entries="@array/status"/>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            />
+        <Button
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/add_caregiver"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/orange"
+            android:foreground="?selectableItemBackground"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

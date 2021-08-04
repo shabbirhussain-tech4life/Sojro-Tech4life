@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dailog_inset">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+      <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+      <ImageButton
+        android:id="@+id/cancel_btn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/cross_icon"
+        android:backgroundTint="@color/dark_grey"
+        android:foreground="?selectableItemBackground" />
+
+      <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+<TextView
+  android:textColor="@color/dark_grey"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15dp"
+    android:text="Patient Profile Name"
+  android:visibility="gone"/>
+
+                <EditText
+                  android:visibility="gone"
+                    android:id="@+id/profile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint=" Patient profile name"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/light_grey"
+                    android:theme="@style/EdittextTheme" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+<TextView
+  android:textColor="@color/dark_grey"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="First name *"
+    android:textSize="15dp"/>
+                <EditText
+                    android:id="@+id/first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="First name"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/light_grey"
+                    android:theme="@style/EdittextTheme" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <TextView
+                  android:textColor="@color/dark_grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last name *"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="Last name"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/light_grey"
+                    android:theme="@style/EdittextTheme" />
+
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                  android:visibility="gone"
+                  />
+
+                <TextView
+
+                  android:textColor="@color/dark_grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primary phone *"
+                    android:textSize="15dp"/>
+
+                <!--<EditText-->
+
+                  <!--android:inputType="phone"-->
+                    <!--android:id="@+id/phone"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="left"-->
+                    <!--android:hint="Phone"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:textColorHint="@color/light_grey"-->
+                    <!--android:theme="@style/EdittextTheme" />-->
+              <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+              <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="phone"/>
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+
+                <Spinner
+                    android:id="@+id/spin_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+              <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:visibility="gone"
+                />
+
+              <TextView
+
+                android:textColor="@color/dark_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secondary phone"
+                android:textSize="15dp"/>
+
+              <!--<EditText-->
+
+              <!--android:inputType="phone"-->
+              <!--android:id="@+id/phone"-->
+              <!--android:layout_width="match_parent"-->
+              <!--android:layout_height="wrap_content"-->
+              <!--android:gravity="left"-->
+              <!--android:hint="Phone"-->
+              <!--android:paddingLeft="10dp"-->
+              <!--android:textColorHint="@color/light_grey"-->
+              <!--android:theme="@style/EdittextTheme" />-->
+              <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/ccp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+              <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/phone2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="phone"/>
+
+
+              <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+              <Spinner
+                android:id="@+id/spin_gender2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null" />
+
+              <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+              <TextView
+                android:textColor="@color/dark_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of birth *"
+                android:textSize="15dp"/>
+              <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+              <LinearLayout
+
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                  android:textSize="15dp"
+                  android:id="@+id/add_dob_choose"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+android:layout_weight="0.5"
+                  android:background="@color/white"
+                  android:foreground="?selectableItemBackground"
+                  android:hint="Date of birth"
+                  android:textAllCaps="false"
+                  android:textColor="@color/dark_grey" />
+                <ImageButton
+                 android:id="@+id/add_dob"
+                  android:background="@color/white"
+                  android:layout_weight="0.5"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/calendar"/>
+              </LinearLayout>
+
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+<TextView
+  android:textColor="@color/dark_grey"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15dp"
+    android:text="Email"/>
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="Email"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/light_grey" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+<TextView
+  android:textColor="@color/dark_grey"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Street Address"
+    android:textSize="15dp"/>
+                <EditText
+                    android:id="@+id/street_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="Street Address"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/light_grey"
+                    android:theme="@style/EdittextTheme" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+              <TextView
+                android:textColor="@color/dark_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:textSize="15dp"/>
+              <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spin_country"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+
+                android:layout_height="40dp" />
+                <!--<Spinner-->
+                    <!--android:id="@+id/spin_country"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@null"-->
+                    <!--/>-->
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+              <TextView
+                android:textColor="@color/dark_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State/Province"
+                android:textSize="15dp"/>
+
+                <!--<Spinner-->
+                    <!--android:id="@+id/spin_state"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@null"-->
+                    <!--/>-->
+              <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spin_state"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+
+                android:layout_height="40dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+              <TextView
+                android:textColor="@color/dark_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textSize="15dp"/>
+              <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spin_city"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+
+                android:layout_height="40dp" />
+                <!--<Spinner-->
+                    <!--android:id="@+id/spin_city"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@null"-->
+
+                    <!--/>-->
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <Button
+                    android:textSize="15dp"
+                    android:id="@+id/add_caregiver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/orange"
+                    android:foreground="?selectableItemBackground"
+                    android:text="Save"
+                    android:textColor="@color/dark_grey" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

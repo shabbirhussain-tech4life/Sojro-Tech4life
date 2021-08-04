@@ -1,0 +1,84 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context="com.mdcbeta.healthprovider.appointment.HealthProviderAppointmentFragment">
+
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+
+        android:background="@drawable/toggle_selector"
+        android:orientation="horizontal">
+        <!--android:layout_below="@+id/btn_appointment"-->
+
+
+        <Button
+            android:id="@+id/btn_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/toggle_selector"
+            android:text="Book a new appointment"
+android:textColor="@color/white"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/toggle_selector"
+            android:text="Current appointments"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/toggle_selector"
+            android:text="Previous appointments"
+            android:textColor="@color/white"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Current Appointments"
+
+        android:layout_below="@+id/button_layout"
+        android:visibility="gone"
+        android:id="@+id/position"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Appointments found"
+        android:id="@+id/empty_view"
+        android:visibility="gone"
+        android:layout_below="@+id/button_layout"/>
+
+<FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_below="@+id/position">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/main_list"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"/>
+
+</FrameLayout>
+</RelativeLayout>

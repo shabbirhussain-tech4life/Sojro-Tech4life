@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:orientation="vertical"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content">
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/light_grey"
+            android:text="Monday"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/monday"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/dark_grey"
+            android:drawableRight="@android:drawable/ic_input_add"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:id="@+id/monday_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+
+        <CheckBox
+                android:id="@+id/mon_not_avail"
+                android:text="Not available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/light_grey"
+            android:text="Tuesday"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/tuesday"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/dark_grey"
+            android:drawableRight="@android:drawable/ic_input_add"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:id="@+id/tuesday_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+
+        <CheckBox
+                android:id="@+id/tue_not_avail"
+                android:text="Not available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/light_grey"
+            android:text="Wednesday"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/wednesday"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/dark_grey"
+            android:drawableRight="@android:drawable/ic_input_add"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:id="@+id/wednesday_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+
+        <CheckBox
+                android:id="@+id/wed_not_avail"
+                android:text="Not available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/light_grey"
+            android:text="Thrusday"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/thrusday"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/dark_grey"
+            android:drawableRight="@android:drawable/ic_input_add"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:id="@+id/thrusday_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+
+        <CheckBox
+                android:id="@+id/thr_not_avail"
+                android:text="Not available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/light_grey"
+            android:text="Friday"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/friday"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/dark_grey"
+            android:drawableRight="@android:drawable/ic_input_add"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:id="@+id/friday_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+
+        <CheckBox
+                android:id="@+id/fri_not_avail"
+                android:text="Not available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/light_grey"
+            android:text="Saturday"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/sat"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/dark_grey"
+            android:drawableRight="@android:drawable/ic_input_add"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:id="@+id/sat_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+
+        <CheckBox
+                android:id="@+id/sat_not_avail"
+                android:text="Not available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/light_grey"
+            android:text="Sunday"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/sun"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/dark_grey"
+            android:drawableRight="@android:drawable/ic_input_add"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:id="@+id/sun_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+
+        <CheckBox
+                android:id="@+id/sun_not_avail"
+                android:text="Not available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

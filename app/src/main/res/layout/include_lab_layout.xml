@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardCornerRadius="4dp"
+    app:cardBackgroundColor="@color/snow_white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:paddingBottom="10dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:textSize="15dp"
+            android:text="Status:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/textView10"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            tools:text="John Doe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_status"
+            android:textSize="16sp"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView10"
+            app:layout_constraintLeft_toRightOf="@+id/textView10"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:textSize="15dp"
+            android:text="Date:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/textView19"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+        <TextView
+            tools:text="John Doe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_date"
+            android:textSize="16sp"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView19"
+            app:layout_constraintLeft_toRightOf="@+id/textView19"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"/>
+
+
+        <TextView
+            android:textSize="15dp"
+            android:text="Diagnosis:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/textView18"
+            app:layout_constraintTop_toBottomOf="@+id/textView19"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+        <TextView
+            tools:text="John Doe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_diagnosis"
+            android:textSize="16sp"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView18"
+            app:layout_constraintLeft_toRightOf="@+id/textView18"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"/>
+
+
+        <TextView
+          android:visibility="gone"
+            android:textSize="15dp"
+            android:text="Test:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView18"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+        <TextView
+          android:visibility="gone"
+            android:id="@+id/txt_preg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView11"
+            app:layout_constraintLeft_toRightOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/txt_diagnosis"
+            tools:text="John Doe" />
+
+        <TextView
+            android:textSize="15dp"
+            android:text="Instructions:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/txt_instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView12"
+            app:layout_constraintLeft_toRightOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/txt_preg"
+            tools:text="John Doe" />
+
+
+        <TextView
+            android:textSize="15dp"
+            android:text="Additional tests:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/txt_name"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            android:layout_marginLeft="16dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+<LinearLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  app:layout_constraintTop_toBottomOf="@+id/txt_name"
+  android:weightSum="1"
+  android:orientation="horizontal"
+  >
+  <Button
+    android:layout_weight="0.5"
+    android:textSize="15dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="View reports"
+    android:textAllCaps="false"
+    android:textColor="@color/black"
+    android:background="@color/orange"
+
+    android:id="@+id/view_labimage"
+
+    android:layout_marginLeft="16dp"
+    app:layout_constraintLeft_toLeftOf="parent"/>
+  <Button
+    android:layout_weight="0.5"
+    android:textSize="15dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="View pdf"
+    android:textAllCaps="false"
+    android:textColor="@color/black"
+    android:background="@color/orange"
+
+    android:id="@+id/textView16"
+
+    android:layout_marginLeft="16dp"
+    app:layout_constraintLeft_toLeftOf="parent"/>
+</LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

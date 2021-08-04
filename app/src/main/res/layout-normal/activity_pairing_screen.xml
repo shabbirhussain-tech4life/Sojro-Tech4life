@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <ImageView
+        android:id="@+id/ivEsteth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout5"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+       />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/txtDeviceConnected2"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivAuxCable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           />
+
+        <ImageView
+            android:id="@+id/ivBluetooth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_bluetooth" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="77dp"
+            android:layout_marginLeft="77dp"
+
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            tools:targetApi="lollipop" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/add_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/relativeLayout5"
+        android:layout_alignEnd="@+id/txtDeviceConnected2"
+        android:layout_alignRight="@+id/txtDeviceConnected2"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/txtDeviceConnected2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/txtDeviceConnected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ToggleButton
+            android:id="@+id/connection_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:checked="false"
+            android:minWidth="80dp"
+            android:minHeight="60dp"
+            android:textOff=""
+            android:textOn="" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:id="@+id/to_time">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView38"
+                    android:padding="10dp"
+                    android:text="From"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@color/orange"
+                    android:layout_weight="1"/>
+
+            <TextView
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/to_txt"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="@color/very_light_grey"
+                    android:visibility="gone"/>
+
+            <TextView
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/to_txt_am_pm"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@color/very_light_grey"/>
+
+
+        </LinearLayout>
+
+        <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:id="@+id/from_time">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="To"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@color/orange"
+                    android:layout_weight="1"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:background="@color/very_light_grey"
+                    android:id="@+id/from_txt"
+                    android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:background="@color/very_light_grey"
+                android:id="@+id/from_txt_am_pm"/>
+
+
+
+        </LinearLayout>
+
+        <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+        <ImageButton
+                android:src="@drawable/ic_add_simple"
+                android:scaleType="centerInside"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/yellow"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_weight="0.8"
+                android:id="@+id/add"/>
+
+
+    </LinearLayout>
+
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+    <CheckBox
+            android:text="Open Consultation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_grey"
+            android:id="@+id/open_con_check"
+            android:checked="false"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/weightlifting"
+            android:drawablePadding="25dp"
+            android:gravity="left|center"
+            android:height="60dp"
+            android:padding="10dp"
+            android:text="Exercise"
+            android:textStyle="bold"
+            android:background="#fff"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnexercise"    />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/food"
+            android:drawablePadding="25dp"
+            android:gravity="left|center"
+            android:height="60dp"
+            android:padding="10dp"
+            android:text="Diet"
+            android:background="#fff"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:id="@+id/btndiet"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/food"
+            android:drawablePadding="25dp"
+            android:gravity="left|center"
+            android:height="60dp"
+            android:padding="10dp"
+            android:text="BMI"
+            android:background="#fff"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnbmi"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/checked_green"
+            android:orientation="vertical"
+            android:id="@+id/progress_container"
+            android:visibility="gone"
+
+            >
+
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:text="Creating case..."/>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="5dp"
+                    android:id="@+id/progressBar"
+                    android:progress="10"
+                    android:max="100"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:progressDrawable="@drawable/customprogressbar"
+                    />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:id="@+id/progress_text"
+                    android:text="0%"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/button">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Current Appointments" />
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Previous Appointments" />
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/main_list"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"/>
+
+
+        <TextView
+                android:id="@+id/empty_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:text="@string/no_data_available" />
+
+
+    </FrameLayout>
+
+</LinearLayout>
+
+
+
+

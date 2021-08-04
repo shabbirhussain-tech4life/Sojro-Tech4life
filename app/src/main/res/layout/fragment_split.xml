@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:id="@+id/split"
+
+    tools:context="jitsi.SplitFragment">
+
+  <LinearLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="1"
+
+        android:rowCount="7">
+      <!--caseview-->
+      <androidx.cardview.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_rowWeight="1"
+          android:layout_columnWeight="1"
+          android:layout_margin="10dp"
+          android:background="@color/dark_green"
+          app:cardCornerRadius="12dp"
+          app:cardElevation="10dp">
+
+        <LinearLayout
+            android:id="@+id/cases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1">
+
+          <TextView
+              android:id="@+id/case_rec"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.8"
+              android:text="Case No: "
+              android:textColor="@color/white"
+              android:textSize="20dp" />
+
+          <ImageView
+android:visibility="gone"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:layout_alignParentRight="true"
+              android:layout_weight="0.2"
+             />
+        </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+      <!--  camera-->
+      <androidx.cardview.widget.CardView
+
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_rowWeight="1"
+          android:layout_columnWeight="1"
+          android:layout_margin="10dp"
+          android:background="@color/light_green"
+          app:cardCornerRadius="12dp"
+          app:cardElevation="10dp">
+
+        <LinearLayout
+            android:id="@+id/cameraNo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/yellow"
+
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:layout_weight="0.8"
+              android:text="Camera "
+              android:textColor="@color/white"
+              android:textSize="20dp" />
+
+          <ImageView
+              android:visibility="gone"
+              android:id="@+id/cam_img"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:layout_alignParentRight="true"
+              android:layout_weight="0.2"
+             />
+
+        </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/card_view"
+
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_rowWeight="1"
+          android:layout_columnWeight="1"
+          android:layout_margin="10dp"
+          app:cardCornerRadius="12dp"
+          app:cardElevation="10dp">
+
+        <FrameLayout
+            android:id="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+           ></FrameLayout>
+      </androidx.cardview.widget.CardView>
+
+      <!--Framelayout -->
+      <!--  <androidx.cardview.widget.CardView-->
+      <!--      android:visibility="gone"-->
+      <!--      android:layout_height="wrap_content"-->
+      <!--      android:layout_width="match_parent"-->
+      <!--      android:layout_columnWeight="1"-->
+      <!--      android:layout_rowWeight="1"-->
+      <!--      app:cardElevation="10dp"-->
+      <!--      android:layout_margin="10dp"-->
+      <!--      android:id="@+id/framVisi"-->
+      <!--      app:cardCornerRadius="12dp">-->
+      <!--    <FrameLayout-->
+      <!--        android:visibility="gone"-->
+      <!--        android:layout_weight="1"-->
+      <!--        android:layout_width="match_parent"-->
+      <!--        android:layout_height="wrap_content"-->
+      <!--        android:id="@+id/two">-->
+      <!--    </FrameLayout>-->
+      <!--  </androidx.cardview.widget.CardView>-->
+      <!--  eLab-->
+      <androidx.cardview.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_rowWeight="1"
+          android:layout_columnWeight="1"
+          android:layout_margin="10dp"
+          android:background="@color/dark_green"
+          app:cardCornerRadius="12dp"
+          app:cardElevation="10dp">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/eLabNo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dark_green"
+
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1">
+
+          <TextView
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:layout_weight="0.8"
+              android:text="eLaboratory "
+              android:textColor="@color/white"
+              android:textSize="20dp" />
+
+          <ImageView
+              android:visibility="gone"
+              android:id="@+id/eLab"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:layout_alignParentRight="true"
+              android:layout_weight="0.2"
+              />
+        </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+      <!--  eRadiology-->
+      <androidx.cardview.widget.CardView
+          android:visibility="gone"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_rowWeight="1"
+          android:layout_columnWeight="1"
+          android:layout_margin="10dp"
+          android:background="@color/light_green"
+          app:cardCornerRadius="12dp"
+          app:cardElevation="10dp">
+
+        <LinearLayout
+            android:id="@+id/eRadNo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_green"
+
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:layout_weight="0.8"
+              android:text="eRadiology"
+              android:textColor="@color/white"
+              android:textSize="20dp" />
+
+          <ImageView
+              android:visibility="gone"
+              android:id="@+id/eRad"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:layout_alignParentRight="true"
+              android:layout_weight="0.2"
+              />
+        </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+      <!--  ePrescription-->
+      <androidx.cardview.widget.CardView
+          android:visibility="gone"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_rowWeight="1"
+          android:layout_columnWeight="1"
+          android:layout_margin="10dp"
+          android:background="@color/dark_green"
+          app:cardCornerRadius="12dp"
+          app:cardElevation="10dp">
+
+        <LinearLayout
+            android:id="@+id/ePresNo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dark_green"
+
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:layout_weight="0.8"
+              android:text="ePrescription "
+              android:textColor="@color/white"
+              android:textSize="20dp" />
+
+          <ImageView
+              android:visibility="gone"
+              android:id="@+id/ePrescr"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:layout_alignParentRight="true"
+              android:layout_weight="0.2"
+             />
+        </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+      <!--  Comment-->
+      <androidx.cardview.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_rowWeight="1"
+          android:layout_columnWeight="1"
+          android:layout_margin="10dp"
+          android:visibility="gone"
+          android:background="@color/light_green"
+          app:cardCornerRadius="12dp"
+          app:cardElevation="10dp">
+
+        <LinearLayout
+            android:id="@+id/commentNo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_green"
+
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:layout_weight="0.8"
+              android:text="Doctor's comment "
+              android:textColor="@color/white"
+              android:textSize="20dp" />
+
+          <ImageView
+              android:visibility="gone"
+              android:id="@+id/ecomment"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:layout_alignParentRight="true"
+              android:layout_weight="0.2"
+              />
+        </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+    <androidx.cardview.widget.CardView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="10dp">
+<LinearLayout
+    android:visibility="gone"
+    android:id="@+id/comm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  android:orientation="vertical" >
+      <EditText
+
+          android:id="@+id/add_comment"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/snow_white"
+          android:hint="Add comment"
+          android:padding="10dp"
+          android:textColorHint="@color/light_grey"
+          android:textSize="12sp" />
+
+      <Button
+          android:textColor="@color/white"
+          android:background="@color/dark_green"
+          android:text="Submit"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+        android:id="@+id/comment"/>
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</FrameLayout>

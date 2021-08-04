@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="dark_pink">#D60A51</color>
+    <color name="black">#252424</color>
+    <color name="yellow">#eac406</color>
+<color name="orange">#eaac33</color>
+
+
+
+
+    <!--transparent-->
+    <color name="transparent">#c0464646</color>
+    <color name="bg_overlay">#40000000</color>
+    <color name="transparent_light_grey">#a28e8e8e</color>
+    <!--transparent-->
+
+
+    <!--blue-->
+    <color name="dark_blue">#0c74da</color>
+    <color name="blue">#1E90FF</color>
+    <color name="light_blue">#00BFFF</color>
+    <color name="purple">#5b69bc</color>
+    <color name="light_blue_bg">#9fdce9</color>
+    <color name="tiffany_blue">#0abab5</color>
+    <!--blue-->
+
+
+
+    <!--green-->
+    <!--<color name="bright_green">#10c469</color>-->
+    <color name="bright_green">#0b2c35</color>
+    <color name="dark_green">#054D11</color>
+    <!--<color name="checked_green">#10C469</color>-->
+    <color name="checked_green">#0b2c35</color>
+    <color name="light_green">#83A371</color>
+    <color name="light_green_bg">#70dcaa</color>
+    <!--green-->
+
+
+   <!-- grey-->
+    <color name="light_grey">#C0C0C0</color>
+    <color name="dark_grey">#616161</color>
+    <color name="normal_grey">#969696</color>
+    <color name="very_light_grey">#efeded</color>
+    <color name="some_grey">#A9A9A9</color>
+   <!-- grey-->
+
+    <!--white-->
+    <color name="white">#ffffff</color>
+    <color name="snow_white">#FFFAFA</color>
+    <!--white-->
+
+
+    <color name="red">#e70a0a</color>
+    <color name="updateCommentBackground">#f1f1f1</color>
+    <color name="dark_greenish">#0b2c35</color>
+    <color name="light_greenish">#017b9c</color>
+    <color name="BLACK">#000000</color>
+    <color name="GRAY">#808080</color>
+    <color name="CADETBLUE">#5f9ea0</color>
+</resources>

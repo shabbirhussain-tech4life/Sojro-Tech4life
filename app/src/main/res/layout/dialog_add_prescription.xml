@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dailog_inset">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/linear1">
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end"
+            android:id="@+id/cancel_btn"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/cross_icon"
+            android:backgroundTint="@color/dark_grey"
+            android:foreground="?selectableItemBackground"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:textSize="15dp"
+                android:text="Medicine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spin_test1"
+                android:entries="@array/medicine"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dose"
+                android:textSize="15dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter dose"
+                android:textColorHint="@color/light_grey"
+                android:theme="@style/EdittextTheme"
+                android:paddingLeft="10dp"
+                android:gravity="left"
+                android:inputType="textCapSentences"
+                android:id="@+id/provisional_diagnosis"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:textSize="15dp"
+                android:text="Select unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spin_test2"
+                android:entries="@array/dose"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:textSize="15dp"
+                android:text="Select route"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spin_laboratory"
+                android:entries="@array/route"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter other route"
+                android:textColorHint="@color/light_grey"
+                android:theme="@style/EdittextTheme"
+                android:paddingLeft="10dp"
+                android:gravity="left"
+                android:inputType="number"
+                android:visibility="gone"
+                android:id="@+id/txt_others"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:textSize="15dp"
+                android:text="Frequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spin_frequency"
+                android:entries="@array/frequency"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:textSize="15dp"
+                android:text="Duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spin_duration"
+                android:entries="@array/duration"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:textSize="15dp"
+                android:text="Refer to pharmacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spin_pharmacy" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textMultiLine|textCapSentences"
+                android:ems="10"
+                android:hint="Comments"
+                android:minLines="4"
+                android:padding="10dp"
+                android:gravity="top|left"
+                android:textColor="@color/black"
+                android:background="@drawable/edittext_border"
+                android:theme="@style/EdittextTheme"
+                android:id="@+id/txt_comment"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+            <Button
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add to prescription"
+                android:id="@+id/add_images"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:background="@color/orange"
+                android:inputType="textCapSentences"
+                android:foreground="?selectableItemBackground" />
+            <!--  added by kanwal khan!-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/details_prescription"
+                android:orientation="vertical"
+                android:visibility="gone"
+
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/medi_pres"
+                        android:text="Medicine: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/medi_pres_show"
+                        android:text=""/>
+
+
+                </LinearLayout>
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/dose_pres"-->
+                <!--android:text="Dose: "/>-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/dose_pres_show"-->
+                <!--android:text=""/>-->
+
+
+                <!--</LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/unit_pres"
+                        android:text="Unit: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/unit_pres_show"
+                        android:text=""/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/frequency_pres"
+                        android:text="Frequency: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/frequency_pres_show"
+                        android:text=""/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/route_pres"
+                        android:text="Route: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/route_pres_show"
+                        android:text=""/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/duration_pres"
+                        android:text="Duration: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/duration_pres_show"
+                        android:text=""/>
+
+
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/comments_pres"-->
+                <!--android:text="Comments: "/>-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/comments_pres_show"-->
+                <!--android:text=""/>-->
+
+
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_border" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/add_caregiver"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:background="@color/yellow"
+                android:inputType="textCapSentences"
+                android:foreground="?selectableItemBackground" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
+

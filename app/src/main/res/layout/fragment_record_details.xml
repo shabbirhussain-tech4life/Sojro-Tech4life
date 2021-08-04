@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/very_light_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:background="@color/dark_greenish"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:id="@+id/txttime"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:background="@color/dark_greenish"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_one"
+            android:text="duration"
+            android:padding="5dp"
+            android:textSize="15dp"
+            android:background="@color/dark_greenish"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_two"
+            android:text="Activity"
+            android:padding="5dp"
+            android:textSize="15dp"
+            android:background="@color/dark_greenish"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_three"
+            android:text="Result"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="10dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_four"
+            android:text="Unit"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_six"
+            android:text="Medication"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_medication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_seven"
+            android:text="Advice"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_advice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_eight"
+            android:text="Fellowup"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_fellowup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comment"
+            android:id="@+id/txt_five"
+            android:padding="5dp"
+            android:textSize="15dp"
+            android:background="@color/dark_greenish"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:textSize="15dp"
+            android:id="@+id/txt_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            />
+
+
+
+   </LinearLayout>
+
+</ScrollView>

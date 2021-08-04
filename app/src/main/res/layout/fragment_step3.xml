@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/very_light_grey">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:padding="6dp">
+
+        <EditText
+android:textColorHint="@color/black"
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+            android:textSize="10dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:id="@+id/search_by_location"
+                android:hint="Enter a location"
+
+           android:textColor="@color/black"
+               />
+
+        <EditText
+            android:textColorHint="@color/black"
+          android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+            android:textSize="10dp"
+                android:gravity="center"
+                android:layout_height="45dp"
+                android:id="@+id/search_by_spec"
+                android:hint="Search By Speciality"
+
+
+              />
+
+
+        <EditText
+            android:backgroundTint="@color/light_greenish"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:gravity="center"
+            android:textSize="10dp"
+                android:layout_height="45dp"
+                android:id="@+id/search_by_doc_name"
+                android:hint="Search By Dr.Name"
+android:textColor="@color/black"
+            android:textColorHint="@color/black"
+                android:textColorHighlight="@color/white"/>
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/doc_list"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"/>
+
+</LinearLayout>

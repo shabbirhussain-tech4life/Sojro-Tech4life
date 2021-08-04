@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mdcbeta">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES" /> <!-- <uses-feature -->
+    <!-- android:name="android.hardware.usb.host" -->
+    <!-- android:required="true" /> -->
+    <uses-feature android:name="android.hardware.usb.host" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- <uses-feature -->
+    <!-- android:glEsVersion="0x00020000" -->
+    <!-- android:required="true" /> -->
+    <!--  -->
+    <!-- <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="28" /> -->
+    <!-- Added by kk 1/1/2020 -->
+    <!-- Added by kk 1/1/2020 -->
+    <!-- <uses-feature -->
+    <!-- android:name="android.hardware.bluetooth_le" -->
+    <!-- android:required="true" /> -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/sojro_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/sojro_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning,HardcodedDebugMode"
+        tools:replace="android:icon,android:theme,android:allowBackup">
+        <activity android:name=".jitsi.WelcomeActivity">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".authenticate.ForgotPassword"
+            android:theme="@style/NoTitleDialog" />
+        <activity
+            android:name=".healthprovider.settings.InviteMemberActivity"
+            android:theme="@style/NoTitleDialog" /> <!-- android:theme="@style/Theme.AppCompat.Dialog" -->
+        <activity
+            android:name=".authenticate.DialogActivity"
+            android:theme="@style/NoTitleDialog" />
+        <activity android:name=".authenticate.TermsActivity" />
+        <activity
+            android:name=".healthprovider.cases.dialog.CaseDetailsDialog"
+            android:excludeFromRecents="true"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".patient.PatientMainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".authenticate.SplashActivity"
+            android:theme="@style/RegisterTheme">
+
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+
+
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+        </activity>
+        <activity
+            android:name=".authenticate.LoginActivity"
+            android:alwaysRetainTaskState="true"
+            android:theme="@style/RegisterTheme" />
+        <activity
+            android:name=".authenticate.SignUpActivity"
+            android:alwaysRetainTaskState="true"
+            android:theme="@style/RegisterTheme" />
+        <activity
+            android:name=".healthprovider.MainHealthProviderActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".supportservice.MainLabActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".supportservice.MainPrescriptionActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".supportservice.MainSupportServiceActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+
+        <service
+            android:name=".patient.appointment.BookAppointmentService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".setting.SettingActivity"
+            android:alwaysRetainTaskState="true"
+            android:windowSoftInputMode="adjustPan" />
+
+        <service
+            android:name=".util.RecorderService"
+            android:exported="false"
+            android:permission="" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

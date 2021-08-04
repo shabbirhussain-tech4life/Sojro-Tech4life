@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_card1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:background="@drawable/background"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/layout1"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/chip" />
+
+
+        <TextView
+            android:id="@+id/tv_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="XXXX XXXX XXXX XXXX"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/layout"
+            android:layout_below="@+id/rl_card1"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+
+
+        <EditText android:id="@+id/inputStreet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/street"
+        android:hint="Street"
+        android:padding="5dp"
+       android:background="@color/orange"
+
+        android:inputType="textVisiblePassword"/>
+
+    <EditText android:id="@+id/inputCountry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/uni"
+        android:hint="Country"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/inputStreet"
+        android:background="@color/orange"
+        android:inputType="textVisiblePassword"/>
+
+            <EditText
+                android:id="@+id/inputState"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputCountry"
+                android:layout_marginTop="5dp"
+                android:background="@color/orange"
+                android:drawableLeft="@drawable/state"
+                android:hint="State"
+                android:inputType="textVisiblePassword"
+
+                android:padding="5dp" />
+
+    <EditText android:id="@+id/inputCity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/city"
+        android:hint="City"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_below="@+id/inputState"
+        android:background="@color/orange"
+
+        android:inputType="textVisiblePassword"/>
+
+    <EditText android:id="@+id/inputPostalcode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/postalcode"
+        android:hint="Postal code"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_below="@+id/inputCity"
+        android:background="@color/orange"
+        android:inputType="textVisiblePassword"/>
+
+    <EditText android:id="@+id/inputEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/email"
+        android:hint="Email"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_below="@+id/inputPostalcode"
+        android:background="@color/orange"
+        android:inputType="textVisiblePassword"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnwithoutpaypall"
+                android:text="Payment without paypall"
+                android:layout_marginTop="10dp"
+                android:background="@color/checked_green"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnpaypall"
+                android:layout_marginTop="10dp"
+                android:text="Payment with paypall"
+                android:background="@color/checked_green"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
+</ScrollView>

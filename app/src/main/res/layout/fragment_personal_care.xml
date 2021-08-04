@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="top">
+
+        <Button
+
+            android:layout_width="0sp"
+            android:layout_weight="0.5"
+            android:drawableTop="@drawable/lf"
+            android:layout_height="200dp"
+            android:text="Life Style"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnLifestyle"
+            android:background="@drawable/button_outline"
+            android:paddingTop="20dp"/>
+
+        <Button
+            android:text="Health Monitoring"
+            android:layout_width="0sp"
+            android:layout_weight="0.5"
+            android:drawableTop="@drawable/hm"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnHealthmonitoring"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_outline"
+            android:paddingTop="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="top">
+
+        <Button
+            android:text="Medical Records"
+            android:layout_width="0sp"
+            android:layout_weight="0.5"
+            android:drawableTop="@drawable/mr"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnMedicalRecords"
+            android:background="@drawable/button_outline"
+            android:paddingTop="20dp"/>
+
+
+        <Button
+            android:text="Health Calendar"
+            android:layout_width="0sp"
+            android:layout_weight="0.5"
+            android:drawableTop="@drawable/hc"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnHmonitoringgraph"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_outline"
+            android:paddingTop="20dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

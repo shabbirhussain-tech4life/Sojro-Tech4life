@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:scaleType="center"
+        android:background="@drawable/toogle_off"
+        android:text="Add Radiology Record"
+        android:layout_gravity="center_vertical"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:contentDescription="@string/app_name" />
+
+    <Button
+        android:id="@+id/radiology_date"
+        android:text="Date"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="#ffb60002"
+        android:drawableLeft="@drawable/calendar"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+    </Button>
+
+    <Button
+        android:id="@+id/radiology_time"
+        android:layout_width="match_parent"
+        android:text="Time"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#ffb60002"
+        android:drawableLeft="@drawable/clock"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+    </Button>
+
+    <Spinner
+        android:id="@+id/radiology_type_of_image"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"/>
+
+    <Button
+        android:id="@+id/radiology_attach_btn"
+        android:text="Attach Image"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="#ffb60002"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+    </Button>
+
+
+    <ImageView
+        android:id="@+id/radiology_attach_image"
+        android:layout_width="match_parent"
+        android:layout_height="160dip"
+        android:adjustViewBounds="true"
+        android:src="@drawable/imgholder"
+        android:scaleType="centerCrop" />
+
+    <EditText
+        android:id="@+id/radiology_comment"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Comment"
+        android:inputType="text"
+        android:background="@drawable/edittext_border"
+        android:paddingLeft="10dp" >
+    </EditText>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:background="@color/orange"
+            android:id="@+id/radiolog_ok"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Ok"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:background="@color/orange"
+            android:id="@+id/radiolog_cancel"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

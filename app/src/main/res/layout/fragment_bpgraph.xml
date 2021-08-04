@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Blood Pressure Data"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:textColor="#ff004822"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:singleLine="true"
+        android:gravity="left|center_vertical"
+        android:id="@+id/textView6"
+        android:background="#c1ffffff"/>
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

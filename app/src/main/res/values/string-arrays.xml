@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="method">
+        <item>Email</item>
+        <item>SMS</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Select gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+    <string-array name="status">
+        <item>Processing</item>
+        <item>Completed</item>
+    </string-array>
+
+    <string-array name="speciality">
+        <item>Pathology</item>
+        <item>Radiology</item>
+        <item>Cardiology</item>
+        <item>Other</item>
+        <item>Dermatoloty</item>
+        <item>paediatrics</item>
+        <item>ENT</item>
+        <item>general practitioner</item>
+        <item>family medicine</item>
+        <item>internal medicine</item>
+        <item>opthalmology</item>
+        <item>neurology</item>
+        <item>neurosurgery</item>
+    </string-array>
+
+
+    <string-array name="referingto">
+        <item>Dr.Andreafay</item>
+        <item>Dr.Shabbir</item>
+    </string-array>
+
+
+    <string-array name="doctor_appointment">
+        <item>Dr.Andreafay</item>
+        <item>Dr.Shabbir</item>
+    </string-array>
+
+
+    <string-array name="persons">
+        <item>Parent</item>
+        <item>Spouse</item>
+        <item>Children</item>
+    </string-array>
+
+
+    <string-array name="app_dura">
+        <item>Choose Duration</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>60 minutes</item>
+    </string-array>
+
+    <string-array name="pregnancy">
+        <item>Select pregnancy</item>
+        <item>Yes</item>
+        <item>No</item>
+        <item>Don\'t know</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="image_type">
+        <item>Select type of image</item>
+        <item>X-Ray</item>
+        <item>Ultrasound</item>
+        <item>CT-Scan</item>
+        <item>MRI</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="medicine">
+        <item>Select medicine</item>
+        <item>Panadol</item>
+        <item>Aspirin</item>
+        <item>Tylenol</item>
+        <item>Folic Acid</item>
+        <item>Berica</item>
+        <item>Caflam</item>
+        <item>Omega</item>
+        <item>Orthoflex</item>
+        <item>Amoxil</item>
+        <item>Augmentan</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="dose">
+        <item>Select Unit</item>
+        <item>mcg</item>
+        <item>mg</item>
+        <item>g</item>
+        <item>ml</item>
+        <item>dl</item>
+        <item>iu</item>
+        <item>umol</item>
+        <item>mmol</item>
+        <item>meq</item>
+        <item>pfu</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="route">
+        <item>Select route</item>
+        <item>Oral</item>
+        <item>Sublingual</item>
+        <item>Intramuscular injection</item>
+        <item>Subcutaneous injection</item>
+        <item>Per rectum</item>
+        <item>Intravenous</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="frequency">
+        <item>Select frequency</item>
+        <item>OD</item>
+        <item>BID</item>
+        <item>TID</item>
+        <item>QID</item>
+        <item>PRN</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="number">
+        <item>Select scale</item>
+        <item>1  min</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10  max</item>
+    </string-array>
+
+    <string-array name="duration">
+        <item>Select duration</item>
+        <item>1 day</item>
+        <item>5 days</item>
+        <item>7 days</item>
+        <item>30 days</item>
+        <!--<item>Manual Entry</item>-->
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="test">
+        <item>Select test</item>
+        <item>Glucose</item>
+        <item>HbA1C</item>
+        <item>Creatinine(eGFR)</item>
+        <item>Uric Acid</item>
+        <item>Sodium</item>
+        <item>Potassium</item>
+        <item>ALT</item>
+        <item>Alk. Phosphate</item>
+        <item>Bilirubin</item>
+        <item>Albumin</item>
+        <item>Lipid Assessment</item>
+        <item>Albumin/Creatinine Ratio, Urine</item>
+        <item>Urinalysis (Chemical)</item>
+        <item>Neonatal Bilirubin</item>
+        <item>CBC</item>
+        <item>Uric Acid</item>
+        <item>Prothrombin Time (INR)</item>
+        <item>Pregnancy Test (Urine)</item>
+        <item>Mononucleosis Screen</item>
+        <item>Rubella</item>
+        <item>Prenatal: ABO,RhD,Antibody Screen</item>
+        <item>Repeat Prenatal Antibodies</item>
+        <item>Cervical</item>
+        <item>Vaginal</item>
+        <item>Vaginal/Rectal - Group B Strep</item>
+        <item>Chlamydia (Specify Source)</item>
+        <item>GC (Specify Source)</item>
+        <item>Sputum</item>
+        <item>Throat</item>
+        <item>Wound (Specify Source)</item>
+        <item>Urine</item>
+        <item>Stool Culture</item>
+        <item>Other Swabs / Pus (Specify Source)</item>
+        <item>Acute Hepatitis</item>
+        <item>Chronic Hepatitis</item>
+        <item>Hepatitis A</item>
+        <item>Hepatitis B</item>
+        <item>Hepatitis C</item>
+        <item>Total PSA</item>
+        <item>Free PSA</item>
+        <item>Vitamin D (25-Hydroxy)</item>
+    </string-array>
+
+    <string-array name="cur">
+     <item>Choose Currency</item>
+
+     <item>AED</item>
+
+    <item>AFN</item>
+
+    <item>ALL</item>
+
+    <item>AMD</item>
+
+    <item>ANG</item>
+
+    <item>AOA</item>
+
+    <item>ARS</item>
+
+    <item>AUD</item>
+
+    <item>AWG</item>
+
+    <item>AZN</item>
+
+    <item>BAM</item>
+
+    <item>BBD</item>
+
+    <item>BDT</item>
+
+    <item>BGN</item>
+
+    <item>BHD</item>
+
+    <item>BIF</item>
+
+    <item>BMD</item>
+
+    <item>BND</item>
+
+    <item>BOB</item>
+
+    <item>BRL</item>
+
+    <item>BSD</item>
+
+    <item>BTN</item>
+
+    <item>BWP</item>
+
+    <item>BYN</item>
+
+    <item>BZD</item>
+
+    <item>CAD</item>
+
+    <item>CDF</item>
+
+    <item>CHF</item>
+
+    <item>CLP</item>
+
+    <item>CNY</item>
+
+    <item>COP</item>
+
+    <item>CRC</item>
+
+    <item>CUC</item>
+
+    <item>CUP</item>
+
+    <item>CVE</item>
+
+    <item>CZK</item>
+
+    <item>DJF</item>
+
+    <item>DKK</item>
+
+    <item>DOP</item>
+
+    <item>DZD</item>
+
+    <item>EGP</item>
+
+    <item>ERN</item>
+
+    <item>ETB</item>
+
+    <item>EUR</item>
+
+    <item>FJD</item>
+
+    <item>FKP</item>
+
+    <item>GBP</item>
+
+    <item>GEL</item>
+
+    <item>GGP</item>
+
+    <item>GHS</item>
+
+    <item>GIP</item>
+
+    <item>GMD</item>
+
+    <item>GNF</item>
+
+    <item>GTQ</item>
+
+    <item>GYD</item>
+
+    <item>HKD</item>
+
+    <item>HNL</item>
+
+    <item>HRK</item>
+
+    <item>HTG</item>
+
+    <item>HUF</item>
+
+    <item>IDR</item>
+
+    <item>ILS</item>
+
+    <item>IMP</item>
+
+    <item>INR</item>
+
+    <item>IQD</item>
+
+    <item>IRR</item>
+
+    <item>ISK</item>
+
+    <item>JEP</item>
+
+    <item>JMD</item>
+
+    <item>JOD</item>
+
+    <item>JPY</item>
+
+    <item>KES</item>
+
+    <item>KGS</item>
+
+    <item>KHR</item>
+
+    <item>KMF</item>
+
+    <item>KPW</item>
+
+    <item>KRW</item>
+
+    <item>KWD</item>
+
+    <item>KYD</item>
+
+    <item>KZT</item>
+
+    <item>LAK</item>
+
+    <item>LBP</item>
+
+    <item>LKR</item>
+
+    <item>LRD</item>
+
+    <item>LSL</item>
+
+    <item>LYD</item>
+
+    <item>MAD</item>
+
+    <item>MDL</item>
+
+    <item>MGA</item>
+
+    <item>MKD</item>
+
+    <item>MMK</item>
+
+    <item>MNT</item>
+
+    <item>MOP</item>
+
+    <item>MRO</item>
+
+    <item>MUR</item>
+
+    <item>MVR</item>
+
+    <item>MWK</item>
+
+    <item>MXN</item>
+
+    <item>MYR</item>
+
+    <item>MZN</item>
+
+    <item>NAD</item>
+
+    <item>NGN</item>
+
+    <item>NIO</item>
+
+    <item>NOK</item>
+
+    <item>NPR</item>
+
+    <item>NZD</item>
+
+    <item>OMR</item>
+
+    <item>PAB</item>
+
+     <item>PEN</item>
+
+    <item>PGK</item>
+
+    <item>PHP</item>
+
+    <item>PKR</item>
+
+    <item>PLN</item>
+
+    <item>PYG</item>
+
+    <item>QAR</item>
+
+    <item>RON</item>
+
+    <item>RSD</item>
+
+    <item>RUB</item>
+
+    <item>RWF</item>
+
+    <item>SAR</item>
+
+    <item>SBD</item>
+
+    <item>SCR</item>
+
+    <item>SDG</item>
+
+    <item>SEK</item>
+
+    <item>SGD</item>
+
+    <item>SHP</item>
+
+    <item>SLL</item>
+
+    <item>SOS</item>
+
+    <item>SRD</item>
+
+    <item>STD</item>
+
+    <item>SVC</item>
+
+    <item>SYP</item>
+
+    <item>SZL</item>
+
+    <item>THB</item>
+
+    <item>TJS</item>
+
+    <item>TMT</item>
+
+    <item>TND</item>
+
+    <item>TOP</item>
+
+    <item>TRY</item>
+
+    <item>TTD</item>
+
+    <item>TVD</item>
+
+    <item>TWD</item>
+
+    <item>TZS</item>
+
+    <item>UAH</item>
+
+    <item>UGX</item>
+
+    <item>USD</item>
+
+    <item>UYU</item>
+
+    <item>UZS</item>
+
+    <item>VEF</item>
+
+    <item>VND</item>
+
+    <item>VUV</item>
+
+    <item>WST</item>
+
+    <item>XAF</item>
+
+    <item>XCD</item>
+
+    <item>XDR</item>
+
+    <item>XOF</item>
+
+    <item>XPF</item>
+
+    <item>YER</item>
+
+    <item>ZAR</item>
+
+    <item>ZMW</item>
+
+    <item>ZWD</item>
+
+    </string-array>
+
+
+
+
+</resources>

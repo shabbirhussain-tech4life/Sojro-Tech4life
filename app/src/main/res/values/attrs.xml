@@ -1,0 +1,30 @@
+<resources>
+    <declare-styleable name="VectorTextView">
+        <attr name="drawableLeftCompat" format="reference"/>
+        <attr name="drawableRightCompat" format="reference"/>
+        <attr name="drawableTopCompat" format="reference"/>
+        <attr name="drawableBottomCompat" format="reference"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension"/>
+        <attr name="verticalSpacing" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_horizontalSpacing" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="WaveformView">
+        <attr name="waveColor" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="lineWidth" format="dimension"/>
+        <attr name="pointStep" format="dimension"/>
+        <attr name="bufferSize" format="integer"/>
+        <attr name="maxValue" format="integer"/>
+        
+    </declare-styleable>
+
+
+</resources>

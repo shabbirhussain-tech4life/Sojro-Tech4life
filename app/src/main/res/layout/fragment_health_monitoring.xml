@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/cardiogram"
+            android:drawablePadding="25dp"
+            android:gravity="left|center"
+            android:height="60dp"
+            android:padding="10dp"
+            android:text="Blood Pressure"
+            android:textStyle="bold"
+            android:background="#fff"
+            android:layout_height="wrap_content"
+        android:id="@+id/btnBloodpreesure"    />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/glucometer"
+            android:drawablePadding="25dp"
+            android:gravity="left|center"
+            android:height="60dp"
+            android:padding="10dp"
+            android:text="Glucose"
+            android:background="#fff"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGlucose"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/blooddonation"
+            android:drawablePadding="25dp"
+            android:gravity="left|center"
+            android:height="60dp"
+            android:padding="10dp"
+            android:text="Cholesterol"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCholesterol"/>
+
+    </LinearLayout>
+
+</LinearLayout>

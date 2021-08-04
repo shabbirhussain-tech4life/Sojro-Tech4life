@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <GridLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+
+            android:rowCount="3">
+            <!--caseview-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:background="@color/dark_grey"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/cases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dark_grey"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/case_rec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="Case No: "
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/card_view1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp">
+
+                <FrameLayout
+                    android:id="@+id/one"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_weight="1"
+                    ></FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--  camera-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:background="@color/dark_grey"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/cameraNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/dark_grey"
+
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="0.8"
+                        android:text="Camera "
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            <!--Framelayout -->
+            <!--  <androidx.cardview.widget.CardView-->
+            <!--      android:visibility="gone"-->
+            <!--      android:layout_height="wrap_content"-->
+            <!--      android:layout_width="match_parent"-->
+            <!--      android:layout_columnWeight="1"-->
+            <!--      android:layout_rowWeight="1"-->
+            <!--      app:cardElevation="10dp"-->
+            <!--      android:layout_margin="10dp"-->
+            <!--      android:id="@+id/framVisi"-->
+            <!--      app:cardCornerRadius="12dp">-->
+            <!--    <FrameLayout-->
+            <!--        android:visibility="gone"-->
+            <!--        android:layout_weight="1"-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:id="@+id/two">-->
+            <!--    </FrameLayout>-->
+            <!--  </androidx.cardview.widget.CardView>-->
+            <!--  eLab-->
+        </GridLayout>
+        <FrameLayout
+            android:id="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            ></FrameLayout>
+    </LinearLayout>
+
+
+
+</FrameLayout>

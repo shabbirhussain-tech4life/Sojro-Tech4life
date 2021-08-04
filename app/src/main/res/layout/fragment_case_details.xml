@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainScrollView"
+    android:background="@color/very_light_grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/txt_book_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/snow_white"
+            android:padding="5dp"
+            android:text="Book an appointment"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <Spinner
+            android:id="@+id/doctors_spin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/snow_white"
+            android:padding="5dp"
+            android:text="Patient ID"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/txt_case_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:padding="10dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/snow_white"
+            android:padding="5dp"
+            android:text="Name"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:padding="10dp" />
+
+
+      <TextView
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/snow_white"
+        android:padding="5dp"
+        android:text="Primary phone"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+      <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:padding="10dp" />
+      <TextView
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/snow_white"
+        android:padding="5dp"
+        android:text="Secondary phone"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+      <TextView
+        android:id="@+id/phone_number2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:padding="10dp" />
+
+      <TextView
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/snow_white"
+            android:padding="5dp"
+            android:text="Gender"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_gender_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:padding="10dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/snow_white"
+            android:padding="5dp"
+            android:text="Location"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/txt_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:padding="10dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/snow_white"
+            android:padding="5dp"
+            android:text="Age"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/snow_white"
+            android:padding="5dp"
+            android:text="Date &amp; Time"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_datetime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dip"
+            android:layout_marginLeft="5dip"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/expandableButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_datetime"
+                android:background="@color/dark_greenish"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:inputType="textCapSentences"
+                android:onClick="expandableButton"
+                android:paddingRight="10dp"
+                android:text="Vital sign report"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+<ScrollView
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/vital_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:layout_marginLeft="5dip"
+                android:orientation="horizontal">
+
+                <TableLayout
+                    android:id="@+id/table_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"></TableLayout>
+
+                <HorizontalScrollView
+                    android:id="@+id/horizon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:id="@+id/table_main"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"></TableLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+</ScrollView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_greenish"
+                android:padding="5dp"
+                android:text="Current complaints"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_medical_complain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences|textMultiLine"
+                android:padding="10dp"
+                android:singleLine="false" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_greenish"
+            android:padding="5dp"
+            android:text="Past medical history"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="10dp"
+            android:singleLine="false" />
+
+        <Button
+            android:id="@+id/expandableButton2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_datetime"
+            android:background="@color/dark_greenish"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:inputType="textCapSentences"
+            android:onClick="expandableButton2"
+            android:paddingRight="10dp"
+            android:text="Past History"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:id="@+id/horiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/table_main1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_greenish"
+            android:padding="5dp"
+            android:text="Images"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.mdcbeta.widget.FlowLayout
+            android:id="@+id/image_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+        </com.mdcbeta.widget.FlowLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_greenish"
+            android:padding="5dp"
+            android:text="Diagnosis"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/mainDiagnosisContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDiagnosis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/yellow"
+                android:padding="5dp"
+                android:text="Preliminary diagnosis:"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/containerDiagnosis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/txtDiagnosisByRev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@color/yellow"
+                android:padding="5dp"
+                android:text="Diagnosis by reviewer:"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/diagnosisByRev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/llAddDiagnosis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etDiagnosisByRev"
+                    android:layout_width="0dp"
+                    android:hint="@string/enter_diagnosis"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:inputType="text" />
+
+                <ImageButton
+                    android:id="@+id/btnAddMore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight=".2"
+                    android:background="@color/blue"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    app:srcCompat="@drawable/add_red" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerDiagnosisByRev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+        <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+        <!--android:id="@+id/expandableLayoutDiagnosis"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--app:ael_duration="400"-->
+        <!--app:ael_expanded="false"-->
+        <!--app:ael_interpolator="linear"-->
+        <!--app:ael_orientation="vertical">-->
+
+        <!---->
+
+        <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+
+        <Button
+            android:id="@+id/expandableButton5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_datetime"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="expandableButton5"
+            android:paddingRight="10dp"
+            android:text="ePrescription"
+            android:background="@color/dark_greenish"
+            android:textColor="@color/white"
+            android:inputType="textCapSentences"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton5"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pres_container"
+                android:orientation="vertical">
+            </LinearLayout>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ffffff"/>
+
+        <Button
+            android:id="@+id/expandableButton4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_datetime"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="expandableButton4"
+            android:paddingRight="10dp"
+            android:text="eLaboratory"
+            android:inputType="textCapSentences"
+            android:background="@color/dark_greenish"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton4"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lab_container"
+                android:orientation="vertical">
+            </LinearLayout>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ffffff"/>
+      <Button
+        android:id="@+id/expandableButton3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_greenish"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/txt_datetime"
+        android:inputType="textCapSentences"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:onClick="expandableButton3"
+        android:paddingRight="10dp"
+        android:text="eRadiology" />
+
+      <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/expandableButton3"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="bounce"
+        app:ael_orientation="vertical">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/comment_container1"
+          android:orientation="vertical">
+        </LinearLayout>
+
+      </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/label_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/dark_greenish"
+            android:padding="5dp"
+            android:text="Comments"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/comment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/add_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/snow_white"
+                android:hint="Add comment"
+                android:padding="10dp"
+                android:textColorHint="@color/light_grey"
+                android:textSize="12sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/commentImagesContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible" />
+            </HorizontalScrollView>
+
+
+            <LinearLayout
+                android:id="@+id/addImageContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/btnAddImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/ic_add_circle_outline_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Image" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+
+            <Button
+                android:id="@+id/send_prescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toEndOf="@+id/send_radiology"
+                android:layout_toRightOf="@+id/send_radiology"
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:text="ePrescription"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/send_laboratory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toEndOf="@+id/send_prescription"
+                android:layout_toRightOf="@+id/send_prescription"
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:text="eLaboratory"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+          <Button
+            android:id="@+id/send_radiology"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:text="eRadiology"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/send_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/send_laboratory"
+                android:layout_toRightOf="@+id/send_laboratory"
+                android:layout_weight="1"
+                android:background="@color/yellow"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

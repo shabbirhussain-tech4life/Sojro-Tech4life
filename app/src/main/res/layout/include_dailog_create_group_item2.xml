@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/item1">
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textSize="16sp"
+            app:srcCompat="@drawable/ic_people"
+            android:layout_gravity="center"/>
+
+    <TextView
+            android:text="Add members"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView48"
+            android:gravity="center"
+            />
+
+    <com.mdcbeta.widget.MembersView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_member"
+            android:hint="Choose members.."/>
+
+
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+   <Button
+       android:textSize="20dp"
+        android:text="Choose Color"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_color"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/rounded_green_bg"/>
+
+</LinearLayout>-->
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+            android:textSize="20dp"
+                android:text="Previous"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/pre_btn"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+               android:background="@drawable/toogle_on"/>
+
+        <Button
+            android:textSize="20dp"
+                android:text="Finish"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_finish"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/toogle_on"/>
+
+    </LinearLayout>
+
+
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+</LinearLayout>

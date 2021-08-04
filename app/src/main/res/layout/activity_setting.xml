@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tool="http://schemas.android.com/tools"
+
+
+   >
+
+    <data>
+        <variable name="user" type="com.mdcbeta.data.model.User"/>
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+
+        android:scrollbars="none">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_greenish"
+            android:orientation="vertical">
+
+
+        <FrameLayout
+
+                android:id="@+id/parent_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+
+                <com.pkmmte.view.CircularImageView
+                    android:id="@+id/image"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    app:border="true"
+                    app:border_width="5dp"
+                    app:imageUrl="@{user.image}"
+                    app:shadow="true"
+                    tool:src="@drawable/profilepic" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/edit_profile_small"
+                    android:src="@drawable/btn_editpic"/>
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toogle_on"
+                android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Profile name :"
+                android:layout_weight=".40"
+                android:layout_marginLeft="4dp"
+                android:textSize="14sp"
+
+                />
+
+            <EditText
+                android:layout_weight=".60"
+                android:id="@+id/profile_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="42dp"
+                android:text="@{user.name}"
+                android:textSize="14sp"
+                android:textColor="@color/white" />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toogle_on"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="First name :"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content"
+                android:text="@{user.firstname}"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:paddingLeft="5dp"
+                android:minHeight="42dp"
+                android:id="@+id/first_name" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toogle_on"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Last name :"/>
+
+            <EditText
+
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{user.lastname}"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:paddingLeft="5dp"
+                android:minHeight="42dp"
+                android:id="@+id/last_name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toogle_on"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Gender :"/>
+
+            <Spinner
+
+android:dropDownSelector="@color/white"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="42dp"
+                android:textColorHint="@color/white"
+                android:textSize="14sp"
+                android:entries="@array/gender"
+
+                android:id="@+id/spin_gender" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toogle_on"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Email :"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_marginLeft="3dp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{user.email}"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:paddingLeft="5dp"
+                android:minHeight="42dp"
+                android:id="@+id/edit_email" />
+
+        </LinearLayout>
+            <Button
+                android:text="Date of birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/birth_date"
+                android:textAllCaps="false"
+                android:background="@color/orange"
+               />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toogle_on"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Speciality :"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/label_speciality"/>
+
+            <EditText
+
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{user.speciality}"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:paddingLeft="5dp"
+                android:minHeight="42dp"
+                android:id="@+id/edit_speciality"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toogle_on"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Degree :"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/lable_degree"/>
+
+            <EditText
+
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@{user.degree}"
+                android:textSize="14sp"
+                android:paddingLeft="5dp"
+                android:minHeight="42dp"
+                android:id="@+id/degree"
+                android:visibility="visible" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toogle_on"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Affiliation :"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/lable_affiliation"/>
+
+            <EditText
+
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@{user.affiliation}"
+                android:textSize="14sp"
+                android:paddingLeft="5dp"
+                android:minHeight="42dp"
+                android:id="@+id/affiliation"
+                android:visibility="visible" />
+
+        </LinearLayout>
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toogle_on"
+        android:orientation="horizontal">
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Bio :"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/lable_bio"/>
+
+            <EditText
+
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@{user.bio}"
+                android:textSize="14sp"
+                android:paddingLeft="5dp"
+                android:minHeight="42dp"
+                android:id="@+id/bio"
+                android:visibility="visible" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toogle_on"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Street address :"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/lable_address"/>
+
+            <EditText
+
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@{user.address}"
+                android:textSize="14sp"
+                android:paddingLeft="5dp"
+                android:minHeight="42dp"
+                android:id="@+id/street_address"
+                android:visibility="visible" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toogle_on"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Search location :"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/label_location"/>
+
+
+            <com.seatgeek.placesautocomplete.PlacesAutocompleteTextView
+                android:id="@+id/places_autocomplete"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:pacv_googleMapsApiKey="AIzaSyCbYLZ9ZHuM20MtgP-oXeuuXPneBpdBNd8"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toogle_on"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="City :"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/label_city"/>
+
+            <EditText
+
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@{user.city}"
+                android:textSize="14sp"
+                android:paddingLeft="5dp"
+                android:minHeight="42dp"
+                android:id="@+id/city"
+                android:visibility="visible" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toogle_on"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="State/Province :"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/label_state"/>
+
+
+            <EditText
+
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="@{user.state}"
+                android:paddingLeft="5dp"
+                android:minHeight="42dp"
+                android:id="@+id/state"
+                android:visibility="visible" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toogle_on"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Country :"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/label_country"/>
+
+            <EditText
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="@{user.country}"
+                android:paddingLeft="5dp"
+                android:minHeight="42dp"
+                android:id="@+id/country"
+                android:visibility="visible" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toogle_on"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Username :"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/lable_username"/>
+
+            <EditText
+
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@{user.username}"
+                android:textSize="14sp"
+                android:paddingLeft="5dp"
+                android:minHeight="42dp"
+                android:id="@+id/user_name"
+                android:visibility="visible" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toogle_on"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Password :"/>
+
+            <EditText
+
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:paddingLeft="5dp"
+                android:minHeight="42dp"
+                android:inputType="textPassword"
+                android:id="@+id/edit_pass" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toogle_on"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Confirm password :"/>
+
+            <EditText
+
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:paddingLeft="5dp"
+                android:minHeight="42dp"
+                android:inputType="textPassword"
+                android:id="@+id/edit_repass" />
+        </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save &amp; Continue "
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:id="@+id/save_btn"
+                android:foreground="?selectableItemBackground"
+                android:background="@color/orange"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</layout>

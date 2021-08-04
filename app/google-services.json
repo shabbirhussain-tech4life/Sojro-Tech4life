@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "238544352906",
+    "firebase_url": "https://sojro-ca516.firebaseio.com",
+    "project_id": "sojro-ca516",
+    "storage_bucket": "sojro-ca516.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238544352906:android:158f404d22990031",
+        "android_client_info": {
+          "package_name": "com.mdcbeta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238544352906-ot19p6qaiqbj9oh0mih5ip32m500nroa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdH4LNJ76hsHQirWM9JbJJb-onTLBsqVE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238544352906-ot19p6qaiqbj9oh0mih5ip32m500nroa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:background="@color/dark_greenish"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+android:background="@color/white"
+        android:id="@+id/lltemptitle">
+
+        <TextView
+            android:background="@color/light_greenish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="3dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Temperature"/>
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1.5dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/colorPrimary"/>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/tvTEMPinfo"
+        android:textSize="20dp"
+        android:layout_below="@id/btnBtCtr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Probe Temperature:"
+        />
+
+        <EditText
+android:enabled="false"
+          android:textColorHint= "@color/GRAY"
+            android:id="@+id/txt_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Probe Temperature"
+            android:textColor="@color/black"
+            android:inputType="number" />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <Spinner
+
+        android:dropDownSelector="@color/black"
+        android:id="@+id/spin_tempunit"
+        android:layout_width="wrap_content"
+     android:backgroundTint="@color/black"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:background="@color/CADETBLUE"/>
+  <LinearLayout
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+      android:background="@color/white"
+      android:layout_width="match_parent"
+      android:orientation="horizontal"
+      android:layout_height="wrap_content">
+    <TextView
+      android:padding="10dp"
+      android:id="@+id/manualTemp"
+      android:textSize="20dp"
+      android:layout_below="@id/btnBtCtr"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/black"
+      android:text="Temperature:"
+      />
+
+    <EditText
+      android:textColorHint= "@color/GRAY"
+      android:id="@+id/manualTemp_txt_temperature"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:hint="Temperature"
+      android:textColor="@color/black"
+      android:inputType="numberDecimal" />
+    </LinearLayout>
+    <Spinner
+
+      android:dropDownSelector="@color/black"
+      android:id="@+id/manualTemp_spin_tempunit"
+      android:layout_width="wrap_content"
+      android:backgroundTint="@color/black"
+      android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+      android:weightSum="1"
+        android:orientation="horizontal">
+
+        <RadioButton
+          android:checked="true"
+            android:id="@+id/radio_oral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:buttonTint="@color/orange"
+            android:textColor="@color/black"
+            android:text="Oral" />
+
+        <RadioButton
+            android:id="@+id/radio_axila"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:buttonTint="@color/orange"
+            android:textColor="@color/black"
+            android:text="Axilla" />
+
+        <RadioButton
+            android:id="@+id/radio_rectum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:buttonTint="@color/orange"
+            android:textColor="@color/black"
+            android:text="Rectum" />
+
+
+      <RadioButton
+
+        android:id="@+id/radio_forehead"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.35"
+        android:buttonTint="@color/orange"
+        android:textColor="@color/black"
+        android:text="Forehead" />
+    </RadioGroup>
+
+</LinearLayout>
+
+</LinearLayout>
