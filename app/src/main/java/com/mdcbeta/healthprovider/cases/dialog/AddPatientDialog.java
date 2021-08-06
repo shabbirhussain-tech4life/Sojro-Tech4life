@@ -3,6 +3,7 @@ package com.mdcbeta.healthprovider.cases.dialog;
 import android.os.Bundle;
 
 import androidx.appcompat.widget.AppCompatEditText;
+
 import android.telephony.PhoneNumberFormattingTextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,34 +54,32 @@ import io.reactivex.schedulers.Schedulers;
 public class AddPatientDialog extends BaseDialogFragment {
 
 
- // AppCompatEditText edtPhoneNumber;
+    // AppCompatEditText edtPhoneNumber;
 
 
+    @BindView(R.id.ccp)
+    CountryCodePicker ccp;
 
 
-  @BindView(R.id.ccp)
-  CountryCodePicker ccp;
+    @BindView(R.id.ccp2)
+    CountryCodePicker ccp2;
+
+    @NotEmpty
+    @BindView(R.id.phone)
+    AppCompatEditText phone;
+
+    @BindView(R.id.phone2)
+    AppCompatEditText phone2;
 
 
-  @BindView(R.id.ccp2)
-  CountryCodePicker ccp2;
-
-@NotEmpty
-  @BindView(R.id.phone)
-  AppCompatEditText phone;
-
-  @BindView(R.id.phone2)
-  AppCompatEditText phone2;
-
-
-  @BindView(R.id.cancel_btn)
+    @BindView(R.id.cancel_btn)
     ImageButton cancelBtn;
 
     @NotEmpty
     @BindView(R.id.profile_name)
     EditText profile_name;
 
-   // @Email
+    // @Email
     @BindView(R.id.email)
     EditText email;
 
@@ -93,12 +92,12 @@ public class AddPatientDialog extends BaseDialogFragment {
     EditText last_name;
 
 
-   // @NotEmpty
+    // @NotEmpty
 //    @BindView(R.id.phone)
 //    EditText phone;
 
 
-   // @NotEmpty
+    // @NotEmpty
     @BindView(R.id.street_address)
     EditText street_address;
 
@@ -110,8 +109,8 @@ public class AddPatientDialog extends BaseDialogFragment {
     @BindView(R.id.add_dob)
     ImageButton add_dob;
 
-  @BindView(R.id.add_dob_choose)
-  TextView add_dob_choose;
+    @BindView(R.id.add_dob_choose)
+    TextView add_dob_choose;
 
     @BindView(R.id.spin_gender)
     Spinner gender;
@@ -132,7 +131,7 @@ public class AddPatientDialog extends BaseDialogFragment {
     ApiFactory apiFactory;
 
     String relation;
-   String genderPosition;
+    String genderPosition;
     String chckG;
 
     String check;
@@ -148,15 +147,16 @@ public class AddPatientDialog extends BaseDialogFragment {
     String myValue;
     String match;
 
-  //  String str = getUser().licenses_id;
-   Boolean my_value_off;
-   boolean checka;
+    //  String str = getUser().licenses_id;
+    Boolean my_value_off;
+    boolean checka;
     boolean checkB;
     boolean a;
-String secondaryphone;
+    String secondaryphone;
     // boolean varyPiable for button click atleast one time
-  boolean buttonDob = false;
-  boolean buttonGender = false;
+    boolean buttonDob = false;
+    boolean buttonGender = false;
+
     public static AddPatientDialog newInstance() {
         AddPatientDialog frag = new AddPatientDialog();
         return frag;
@@ -176,14 +176,12 @@ String secondaryphone;
         super.onStart();
         Bundle mArgs = getArguments();
         //  myValue = mArgs.getString("key");
-      //  my_value_off = mArgs.getBoolean("my_key");
-       // checkB = mArgs.getBoolean("Key");
-        a=true;
-    //  phone.addTextChangedListener(new PhoneNumberFormattingTextWatcher());
-      ccp.isValid();
-      ccp.registerPhoneNumberTextView(phone);
-
-
+        //  my_value_off = mArgs.getBoolean("my_key");
+        // checkB = mArgs.getBoolean("Key");
+        a = true;
+        //  phone.addTextChangedListener(new PhoneNumberFormattingTextWatcher());
+        ccp.isValid();
+        ccp.registerPhoneNumberTextView(phone);
 
 
 //Toast.makeText(getContext(), "create "+my_value_off, Toast.LENGTH_SHORT).show();
@@ -200,8 +198,8 @@ String secondaryphone;
                         .compose(RxUtil.applySchedulers())
                         .subscribe(model -> {
 
-                          ArrayAdapter<Country> adapter =
-                                    new ArrayAdapter<Country>(getContext(),android.R.layout.simple_spinner_item,model.getData());
+                            ArrayAdapter<Country> adapter =
+                                    new ArrayAdapter<Country>(getContext(), android.R.layout.simple_spinner_item, model.getData());
                             countryList = model.getData();
                             country.setAdapter(adapter);
                         }, throwable -> showError(throwable.getMessage())));
@@ -217,12 +215,11 @@ String secondaryphone;
                 })
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(model -> {
-                  ArrayAdapter<States> adapter =
-                            new ArrayAdapter<States>(getContext(),android.R.layout.simple_spinner_item, model.getData());
+                    ArrayAdapter<States> adapter =
+                            new ArrayAdapter<States>(getContext(), android.R.layout.simple_spinner_item, model.getData());
                     state.setAdapter(adapter);
 
                 }));
-
 
 
         compositeDisposable.add(RxAdapterView.itemSelections(state)
@@ -235,8 +232,8 @@ String secondaryphone;
                 })
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(model -> {
-                  ArrayAdapter<City> adapter =
-                            new ArrayAdapter<City>(getContext(), android.R.layout.simple_spinner_item,  model.getData());
+                    ArrayAdapter<City> adapter =
+                            new ArrayAdapter<City>(getContext(), android.R.layout.simple_spinner_item, model.getData());
                     city.setAdapter(adapter);
                 }));
 
@@ -253,10 +250,10 @@ String secondaryphone;
 
     private List<String> getDataForGenderSpinner() {
         List<String> items = new ArrayList<>();
-        items.add("Select Gender");
+        items.add("Select gender");
         items.add("Male");
         items.add("Female");
-      items.add("Others");
+        items.add("Others");
         return items;
     }
 
@@ -271,19 +268,17 @@ String secondaryphone;
 
         showProgress("Loading");
 
-if(phone2.getText().toString().isEmpty())
-{
-  secondaryphone = "";
-}
-else {
-  secondaryphone = ccp2.getSelectedCountryCodeWithPlus()+" "+phone2.getText().toString();
-}
+        if (phone2.getText().toString().isEmpty()) {
+            secondaryphone = "";
+        } else {
+            secondaryphone = ccp2.getSelectedCountryCodeWithPlus() + " " + phone2.getText().toString();
+        }
 
-        User_Patient user = new User_Patient(getUser().licenses_id,first_name.getText().toString()+last_name.getText().toString(),
-                first_name.getText().toString()+" "+ last_name.getText().toString(),
-          first_name.getText().toString(), last_name.getText().toString(),ccp.getSelectedCountryCodeWithPlus()+" "+phone.getText().toString(),
-          genderPosition, add_dob_choose.getText().toString(),
-                email.getText().toString(),secondaryphone);
+        User_Patient user = new User_Patient(getUser().licenses_id, first_name.getText().toString() + last_name.getText().toString(),
+                first_name.getText().toString() + " " + last_name.getText().toString(),
+                first_name.getText().toString(), last_name.getText().toString(), ccp.getSelectedCountryCodeWithPlus() + " " + phone.getText().toString(),
+                genderPosition, add_dob_choose.getText().toString(),
+                email.getText().toString(), secondaryphone);
 
 
 //int i =1;
@@ -293,11 +288,11 @@ else {
                     if (objectResponse.status) {
                         showProgress("Loading");
 
-        //                Toast.makeText(getContext(),"New patient registered successfully",Toast.LENGTH_SHORT).show();
-                       showProgress("New Patient created successfully !");
+                        //                Toast.makeText(getContext(),"New patient registered successfully",Toast.LENGTH_SHORT).show();
+                        showProgress("New Patient created successfully !");
 
 
-                       hideProgress();
+                        hideProgress();
 
 //         if(a==checkB)
 //         {
@@ -306,7 +301,7 @@ else {
 //         }
 //         else {
                         getFragmentHandlingActivity().replaceFragment(AppointmentFragment.newInstance());
-       //  a=false;}
+                        //  a=false;}
 
 //if(checka==checkB) {}
 //
@@ -342,23 +337,20 @@ else {
                 dismiss();
                 break;
             case R.id.add_caregiver:
-              if(buttonDob == true){
-                if(buttonGender == true && chckG!= "0" )
-                {
-                  validator.validate();
+                if (buttonDob == true) {
+                    if (buttonGender == true && chckG != "0") {
+                        validator.validate();
+                    } else {
+                        Toast.makeText(getContext(), "Gender is mandatory", Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    Toast.makeText(getContext(), "Date of birth is mandatory", Toast.LENGTH_SHORT).show();
                 }
-                else {
-                  Toast.makeText(getContext(),"Gender is mandatory",Toast.LENGTH_SHORT).show();
-                }
-                }
-                else {
-                  Toast.makeText(getContext(),"Date of birth is mandatory",Toast.LENGTH_SHORT).show();
-              }
                 break;
             case R.id.add_dob:
-              buttonDob = true;
+                buttonDob = true;
                 Utils.setBirthDate(requireParentFragment(), date -> {
-                  add_dob_choose.setText(date);
+                    add_dob_choose.setText(date);
                 });
                 break;
         }
@@ -368,16 +360,15 @@ else {
     void onRelationSelected(Spinner spinner, int position) {
         genderPosition = Integer.toString(position);
         buttonGender = true;
-      chckG = genderPosition;
+        chckG = genderPosition;
 
-       // Toast.makeText(getContext(),"gender"+chckG,Toast.LENGTH_SHORT).show();
+        // Toast.makeText(getContext(),"gender"+chckG,Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onResume() {
         super.onResume();
     }
-
 
 
 }

@@ -126,9 +126,9 @@ public abstract class FragmentsHandlerActivity extends BaseActivity {
         {
             new AlertDialog.Builder(this)
                     .setIcon(R.drawable.ic_dialog_alert)
-                    //.setTitle("You want to go back ?")
+                    .setTitle("You want to go back ?")
                     .setPositiveButton("", (dialog, which) -> {
-                     //   super.onBackPressed();
+                        super.onBackPressed();
 
 
                     })

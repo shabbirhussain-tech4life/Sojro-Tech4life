@@ -279,11 +279,12 @@ public class MainHealthProviderActivity extends FragmentsHandlerActivity {
 
     @Override
     public void onBackPressed() {
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
+//        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+//            drawerLayout.closeDrawer(GravityCompat.START);
+//        } else {
+//            super.onBackPressed();
+//        }
+        super.onBackPressed();
     }
 
     public ActionBar provideActionBar() {
@@ -369,6 +370,7 @@ public class MainHealthProviderActivity extends FragmentsHandlerActivity {
 //    super.trimCache();
 //    Toast.makeText(getApplicationContext(),"trim memory",Toast.LENGTH_SHORT).show();
 //  }
+
 
 
 }

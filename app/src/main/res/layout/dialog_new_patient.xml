@@ -142,6 +142,30 @@
                 <Space
                     android:layout_width="match_parent"
                     android:layout_height="10dp" />
+                <TextView
+
+                    android:textColor="@color/dark_grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Secondary phone"
+                    android:textSize="15dp"/>
+
+                <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                    android:id="@+id/ccp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/phone2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="phone"/>
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
 
 
                 <Spinner
@@ -160,13 +184,6 @@
                 android:visibility="gone"
                 />
 
-              <TextView
-
-                android:textColor="@color/dark_grey"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Secondary phone"
-                android:textSize="15dp"/>
 
               <!--<EditText-->
 
@@ -179,31 +196,18 @@
               <!--android:paddingLeft="10dp"-->
               <!--android:textColorHint="@color/light_grey"-->
               <!--android:theme="@style/EdittextTheme" />-->
-              <com.rilixtech.widget.countrycodepicker.CountryCodePicker
-                android:id="@+id/ccp2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
 
-              <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/phone2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                android:inputType="phone"/>
-
-
-              <Space
-                android:layout_width="match_parent"
-                android:layout_height="10dp" />
 
 
               <Spinner
+                  android:visibility="gone"
                 android:id="@+id/spin_gender2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@null" />
 
               <Space
+                  android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="10dp" />
 

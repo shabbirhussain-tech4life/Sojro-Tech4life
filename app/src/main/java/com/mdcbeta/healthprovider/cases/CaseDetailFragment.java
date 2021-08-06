@@ -474,7 +474,7 @@ public class CaseDetailFragment extends BaseFragment implements BaseDialogFragme
     @SuppressLint("CheckResult")
     public void getData() {
 
-        healthProviderViewModel.getUserName(getUser().getLicenses_id(), false).observe(this, data -> {
+        healthProviderViewModel.getUserName(getUser().getLicenses_id(), false).observe(getViewLifecycleOwner(), data -> {
 
 
                     if (data.status == Status.SUCCESS && data.data != null) {

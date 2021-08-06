@@ -23,7 +23,7 @@ public class StepperAdapter extends AbstractFragmentStepAdapter {
 
 
     public StepperAdapter(FragmentManager fm, Context context) {
-        super(fm, context);
+        super(fm,context);
     }
 
     @Override
@@ -76,7 +76,7 @@ public class StepperAdapter extends AbstractFragmentStepAdapter {
 
         switch (position) {
             case 0:
-                title = "Patient daemography";
+                title = "Patient demography";
                 break;
             case 1:
                 title = "Current complaints";

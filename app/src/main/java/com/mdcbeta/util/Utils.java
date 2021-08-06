@@ -436,7 +436,7 @@ public class Utils {
         return x;
     }
 
-    public static void setDate(Activity context, MyOnDateSetListener callBack) {
+    public static void setDate(Fragment context, MyOnDateSetListener callBack) {
         Calendar now = Calendar.getInstance();
         DatePickerDialog dpd = DatePickerDialog.newInstance(
                 (view, year, monthOfYear, dayOfMonth) -> {
@@ -453,7 +453,7 @@ public class Utils {
                 now.get(Calendar.DAY_OF_MONTH)
         );
         dpd.setVersion(DatePickerDialog.Version.VERSION_2);
-//        dpd.show(context.getFragmentManager(), "Datepickerdialog");
+        dpd.show(context.getFragmentManager(), "Datepickerdialog");
 
     }
 
@@ -607,7 +607,7 @@ public class Utils {
                 now.get(Calendar.DAY_OF_MONTH)
         );
         dpd.setVersion(DatePickerDialog.Version.VERSION_2);
-        dpd.show(context.getFragmentManager(), "Datepickerdialog");
+       dpd.show(context.getFragmentManager(), "Datepickerdialog");
 
     }
 

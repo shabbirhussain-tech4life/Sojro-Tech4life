@@ -532,12 +532,12 @@ public class ScheduleFragment extends BaseFragment {
     public void dateClick(View view) {
         switch (view.getId()) {
             case R.id.start_date:
-                Utils.setDate(getActivity(), date -> {
+                Utils.setDate(requireParentFragment(), date -> {
                     startDate.setText(date);
                 });
                 break;
             case R.id.end_date:
-                Utils.setDate(getActivity(), date -> {
+                Utils.setDate(requireParentFragment(), date -> {
                     endDate.setText(date);
                 });
                 break;
